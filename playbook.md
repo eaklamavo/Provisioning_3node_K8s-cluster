@@ -91,12 +91,12 @@ kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 
 # Create a join token on master node & get the join command to paste on worker nodes.
 
-kubeadm token create --print-join-command
+$ kubeadm token create --print-join-command
 
 
 # Copy the join command from the control plane node. Run it on each worker nodes.
 
-sudo kubeadm join <generated token>
+$ sudo kubeadm join <generated token>
 
 # Verify all nodes in your cluster are ready, may take a few moments for all of the nodes to enter the READY state.
 
