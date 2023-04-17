@@ -87,7 +87,7 @@ kubectl get nodes
 
 # Install on master node server, the Calico network add-on.
 
-kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+kubectl apply -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml
 
 # Create a join token on master node & get the join command to paste on worker nodes.
 
